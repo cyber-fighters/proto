@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='api.proto',
   package='busapi',
   syntax='proto3',
-  serialized_pb=_b('\n\tapi.proto\x12\x06\x62usapi\"<\n\x0bScannerInfo\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\"d\n\x0c\x41nalyzerInfo\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12%\n\x08scanners\x18\x04 \x03(\x0b\x32\x13.busapi.ScannerInfo\"\x15\n\x13ListAnalyzerRequest\"?\n\x14ListAnalyzerResponse\x12\'\n\tanalyzers\x18\x01 \x03(\x0b\x32\x14.busapi.AnalyzerInfo\"3\n\x0f\x41nalyserRequest\x12\x0e\n\x06\x64omain\x18\x01 \x01(\t\x12\x10\n\x08\x61nalyzer\x18\x02 \x01(\t\"@\n\x10\x41nalyserResponse\x12 \n\x04\x63ode\x18\x01 \x01(\x0e\x32\x12.busapi.ResultCode\x12\n\n\x02id\x18\x02 \x01(\t\")\n\x0bScanRequest\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06\x64omain\x18\x02 \x01(\t\"0\n\x0cScanResponse\x12 \n\x04\x63ode\x18\x01 \x01(\x0e\x32\x12.busapi.ResultCode\")\n\rScanCompleted\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04path\x18\x02 \x01(\t\"_\n\tJobStatus\x12\n\n\x02id\x18\x01 \x01(\t\x12\x1e\n\x06status\x18\x02 \x01(\x0e\x32\x0e.busapi.Status\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x11\n\tcompleted\x18\x04 \x01(\r*\x1e\n\nResultCode\x12\x06\n\x02OK\x10\x00\x12\x08\n\x04\x46\x41IL\x10\x01*b\n\x06Status\x12\t\n\x05READY\x10\x00\x12\x0b\n\x07PENDING\x10\x01\x12\x0b\n\x07WAITING\x10\x02\x12\x0c\n\x08SCANNING\x10\x03\x12\r\n\tANALYZING\x10\x04\x12\x0b\n\x07TIMEOUT\x10\x0e\x12\t\n\x05\x45RROR\x10\x0f\x62\x06proto3')
+  serialized_pb=_b('\n\tapi.proto\x12\x06\x62usapi\"<\n\x0bScannerInfo\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\"d\n\x0c\x41nalyzerInfo\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12%\n\x08scanners\x18\x04 \x03(\x0b\x32\x13.busapi.ScannerInfo\"\x15\n\x13ListAnalyzerRequest\"?\n\x14ListAnalyzerResponse\x12\'\n\tanalyzers\x18\x01 \x03(\x0b\x32\x14.busapi.AnalyzerInfo\"3\n\x0f\x41nalyserRequest\x12\x0e\n\x06\x64omain\x18\x01 \x01(\t\x12\x10\n\x08\x61nalyzer\x18\x02 \x01(\t\"@\n\x10\x41nalyserResponse\x12 \n\x04\x63ode\x18\x01 \x01(\x0e\x32\x12.busapi.ResultCode\x12\n\n\x02id\x18\x02 \x01(\t\")\n\x0bScanRequest\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06\x64omain\x18\x02 \x01(\t\"0\n\x0cScanResponse\x12 \n\x04\x63ode\x18\x01 \x01(\x0e\x32\x12.busapi.ResultCode\"m\n\tJobStatus\x12\n\n\x02id\x18\x01 \x01(\t\x12\x1e\n\x06status\x18\x02 \x01(\x0e\x32\x0e.busapi.Status\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x11\n\tcompleted\x18\x04 \x01(\r\x12\x0c\n\x04path\x18\x05 \x01(\t*\x1e\n\nResultCode\x12\x06\n\x02OK\x10\x00\x12\x08\n\x04\x46\x41IL\x10\x01*b\n\x06Status\x12\t\n\x05READY\x10\x00\x12\x0b\n\x07PENDING\x10\x01\x12\x0b\n\x07WAITING\x10\x02\x12\x0c\n\x08SCANNING\x10\x03\x12\r\n\tANALYZING\x10\x04\x12\x0b\n\x07TIMEOUT\x10\x0e\x12\t\n\x05\x45RROR\x10\x0f\x62\x06proto3')
 )
 
 _RESULTCODE = _descriptor.EnumDescriptor(
@@ -40,8 +40,8 @@ _RESULTCODE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=625,
-  serialized_end=655,
+  serialized_start=596,
+  serialized_end=626,
 )
 _sym_db.RegisterEnumDescriptor(_RESULTCODE)
 
@@ -83,8 +83,8 @@ _STATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=657,
-  serialized_end=755,
+  serialized_start=628,
+  serialized_end=726,
 )
 _sym_db.RegisterEnumDescriptor(_STATUS)
 
@@ -398,44 +398,6 @@ _SCANRESPONSE = _descriptor.Descriptor(
 )
 
 
-_SCANCOMPLETED = _descriptor.Descriptor(
-  name='ScanCompleted',
-  full_name='busapi.ScanCompleted',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='id', full_name='busapi.ScanCompleted.id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='path', full_name='busapi.ScanCompleted.path', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=485,
-  serialized_end=526,
-)
-
-
 _JOBSTATUS = _descriptor.Descriptor(
   name='JobStatus',
   full_name='busapi.JobStatus',
@@ -471,6 +433,13 @@ _JOBSTATUS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='path', full_name='busapi.JobStatus.path', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -483,8 +452,8 @@ _JOBSTATUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=528,
-  serialized_end=623,
+  serialized_start=485,
+  serialized_end=594,
 )
 
 _ANALYZERINFO.fields_by_name['scanners'].message_type = _SCANNERINFO
@@ -500,7 +469,6 @@ DESCRIPTOR.message_types_by_name['AnalyserRequest'] = _ANALYSERREQUEST
 DESCRIPTOR.message_types_by_name['AnalyserResponse'] = _ANALYSERRESPONSE
 DESCRIPTOR.message_types_by_name['ScanRequest'] = _SCANREQUEST
 DESCRIPTOR.message_types_by_name['ScanResponse'] = _SCANRESPONSE
-DESCRIPTOR.message_types_by_name['ScanCompleted'] = _SCANCOMPLETED
 DESCRIPTOR.message_types_by_name['JobStatus'] = _JOBSTATUS
 DESCRIPTOR.enum_types_by_name['ResultCode'] = _RESULTCODE
 DESCRIPTOR.enum_types_by_name['Status'] = _STATUS
@@ -561,13 +529,6 @@ ScanResponse = _reflection.GeneratedProtocolMessageType('ScanResponse', (_messag
   # @@protoc_insertion_point(class_scope:busapi.ScanResponse)
   ))
 _sym_db.RegisterMessage(ScanResponse)
-
-ScanCompleted = _reflection.GeneratedProtocolMessageType('ScanCompleted', (_message.Message,), dict(
-  DESCRIPTOR = _SCANCOMPLETED,
-  __module__ = 'api_pb2'
-  # @@protoc_insertion_point(class_scope:busapi.ScanCompleted)
-  ))
-_sym_db.RegisterMessage(ScanCompleted)
 
 JobStatus = _reflection.GeneratedProtocolMessageType('JobStatus', (_message.Message,), dict(
   DESCRIPTOR = _JOBSTATUS,

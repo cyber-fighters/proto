@@ -69,14 +69,6 @@ message ScanResponse {
 	ResultCode code = 1;
 }
 
-message ScanCompleted {
-	// ID of the calling analyzer run
-	string id = 1;
-
-	// Base path for scan result
-	string path = 2;
-}
-
 message JobStatus {
 	// ID of the analyzer run
 	string id = 1;
@@ -89,4 +81,7 @@ message JobStatus {
 
 	// Approximated percent completed
 	uint32 completed = 4;
+
+	// On "ready" this contains the result path
+	string path = 5;
 }
